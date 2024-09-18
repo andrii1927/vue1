@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <h1>{{ title }}</h1>
-   <vButton @click="increment" outlined>Click here</vButton>
+   <StarRating :rating="1"/>
   </div>
 </template>
 
 <script>
-import vButton from './components/vButton.vue'
+import StarRating from './components/StarRating.vue'
 
 export default {
   name: 'App',
   components: {
-    vButton
+    StarRating
   },
   data(){
     return {
